@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+        <title>4XX Client-side error - Brandon's Website</title>
+        <link rel="icon" type="image/x-icon" href= "{{ url_for('static',filename='favicon.png') }}">    
+    </head>
+    <body>
+        <center-items><img style = "width: 450px;" src="{{ url_for('static',filename='favicon.png') }}"/></center-items>
+        <center-items><p>Something went wrong...</p></center-items>
+        <center-items><p style = "font-size: 30px">Error {{e}}</p></center-items>
+        <center-items><p style = "font-size: 30px">Something on your side went wrong. </p></center-items>
+        <center-items><div class = button onclick = 'location.href = "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status"'>Details</div></center-items>        
+        <br/><br/>
+        <center-items><p>Suggestions:</p></center-items>
+        <center-items><div class = "button" onclick = 'location.href = "/"'>Home</div></center-items>
+        <center-items><div class = "button" onclick = 'location.href = "/projects"'>Projects</div></center-items>
+        <br/>
+        <center-items><p>Can't find what you were looking for?</p></center-items>
+        <center-items><div class = "button" onclick = 'location.href = "/search"'>Search for something</div></center-items>
+        <nav>
+            <flexbox>
+                <div class = navmenu onclick = 'location.href = "/"'>Home</div>
+                <div class = navmenu onclick = 'location.href = "/search"'>Search</div>
+                <div class = navmenu onclick = 'location.reload()'>Refresh</div>
+                <div class = navmenu>Projects</div>
+            </flexbox>
+        </nav>
+    </body>
+</html>
