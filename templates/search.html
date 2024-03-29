@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+        <title>Search - Brandon's Website</title>
+        <link rel="icon" type="image/x-icon" href= "{{ url_for('static',filename='favicon.png') }}">    
+    </head>
+    <body>
+        <form method="post" action="/search">
+            <input placeholder="Type something here..." name="contents"/>
+            <input type="submit" value="Submit" name="submit"/>
+        </form>
+        </p>{{result}}</p>
+        <nav>
+            <flexbox>
+                <div class = navmenu onclick = 'location.href = "/"'>Home</div>
+                <div class = navmenu onclick = 'location.reload()'>Refresh</div>
+                <div class = navmenu>Projects</div>
+            </flexbox>
+        </nav>
+    </body>
+</html>

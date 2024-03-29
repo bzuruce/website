@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+        <title>Jokes - Brandon's Website</title>
+        <link rel="icon" type="image/x-icon" href= "{{ url_for('static',filename='favicon.png') }}">    
+    </head>
+    <body>
+        <p style="font-size: 15px">YOUR JOKE IS: </p>
+        <p style = "font-size: 30px">Joke #{{jokenumber}}</p>
+        <p style = "font-size: 20px">{{jokecontent}}</p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <p>Not impressed? Click or tap the "Refresh" button on the bottom of the page to get a new joke!</p>
+        <nav>
+            <flexbox>
+                <div class = navmenu onclick = 'location.href = "/"'>Home</div>
+                <div class = navmenu onclick = 'location.reload()'>Refresh</div>
+                <div class = navmenu>Projects</div>
+            </flexbox>
+        </nav>
+    </body>
+</html>

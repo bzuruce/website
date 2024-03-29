@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+        <title>Home - Brandon's Website</title>
+        <link rel="icon" type="image/x-icon" href= "{{ url_for('static',filename='favicon.png') }}">    
+    </head>
+    <body>
+        <center-items><img style = "width: 450px;" src="{{ url_for('static',filename='favicon.png') }}"/></center-items>
+        <center-items><p style = "font-size: 15px">Welcome! </p></center-items>
+        <center-items><p style = "font-size: 20px">Website subdomains are listed below. </p></center-items>
+        <center-items><div class = "button" onclick = 'location.href = "/jokes"'>Visit Jokes Website</div></center-items>
+        <center-items><div class = "button" onclick = 'location.href = "/template"'>Visit Template Website</div></center-items>   
+    
+        <nav>
+            <flexbox>
+                <div class = navmenu onclick = 'location.href = "/"'>Home</div>
+                <div class = navmenu onclick = 'location.reload()'>Refresh</div>
+                <div class = navmenu>Projects</div>
+            </flexbox>
+        </nav>
+    </body>
+</html>
