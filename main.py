@@ -65,5 +65,5 @@ def jokes():
 @app.route("/template")
 def template():
     return render_template("template.html")
-if __name__ in __main__:
+if __name__ == "__main__":
     app.run(debug=False, port=441)
